@@ -14108,3 +14108,259 @@ Served asset /my_javascript_.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-14 21:24:34 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 21:42:49 -0800
+Connecting to database specified by database.yml
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (3.2.12) lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `initialize'
+  activerecord (3.2.12) lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `new'
+  activerecord (3.2.12) lib/active_record/connection_adapters/postgresql_adapter.rb:1208:in `connect'
+  activerecord (3.2.12) lib/active_record/connection_adapters/postgresql_adapter.rb:326:in `initialize'
+  activerecord (3.2.12) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.12) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+  /Users/doug/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+  /Users/doug/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__1818348003162162637__call__197742459466717138__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/doug/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/doug/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/doug/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/doug/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/doug/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /Users/doug/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateHighScores (20131013050845)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20131013050845')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 22:11:12 -0800
+Connecting to database specified by database.yml
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.3ms)[0m  [1mSELECT "high_scores".* FROM "high_scores" [0m
+  Rendered high_scores/index.html.erb within layouts/application (2.9ms)
+Compiled application.js  (5ms)  (pid 9382)
+Completed 200 OK in 205ms (Views: 132.9ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /high_scores.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bubble_chart.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /bubble_chart.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/d3.v3.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /d3.v3.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/utilities.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /utilities.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/high_scores.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /high_scores.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:13 -0800
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/high_scores/new" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (6.9ms)
+  Rendered high_scores/new.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 95ms (Views: 89.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /high_scores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/d3.v3.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /d3.v3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/utilities.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /utilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bubble_chart.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /bubble_chart.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/high_scores.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /high_scores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:15 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/high_scores" for 127.0.0.1 at 2013-12-14 22:11:17 -0800
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JiL1LtYUuhYHjtW7xeXwGZ3+D7ZIFRiXZQzzfbHJUuQ=", "high_score"=>{"game"=>"", "score"=>""}, "commit"=>"Create High score"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (44.5ms)[0m  [1mINSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sun, 15 Dec 2013 06:11:17 UTC +00:00], ["game", ""], ["score", nil], ["updated_at", Sun, 15 Dec 2013 06:11:17 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/high_scores/1
+Completed 302 Found in 48ms (ActiveRecord: 45.1ms)
+
+
+Started GET "/high_scores/1" for 127.0.0.1 at 2013-12-14 22:11:17 -0800
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHighScore Load (0.6ms)[0m  [1mSELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/controllers/high_scores_controller.rb:34:in `show'
+
+
+  Rendered /Users/doug/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/doug/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/doug/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/high_scores" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JiL1LtYUuhYHjtW7xeXwGZ3+D7ZIFRiXZQzzfbHJUuQ=", "high_score"=>{"game"=>"a", "score"=>"23"}, "commit"=>"Create High score"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sun, 15 Dec 2013 06:11:30 UTC +00:00], ["game", "a"], ["score", 23], ["updated_at", Sun, 15 Dec 2013 06:11:30 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/high_scores/2
+Completed 302 Found in 7ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/high_scores/2" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHighScore Load (0.3ms)[0m  [1mSELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE "high_scores" SET "score" = 24, "updated_at" = '2013-12-15 06:11:30.854332' WHERE "high_scores"."id" = 2[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  Rendered high_scores/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /high_scores.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/d3.v3.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /d3.v3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bubble_chart.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /bubble_chart.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/utilities.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /utilities.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/high_scores.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /high_scores.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-14 22:11:30 -0800
+Served asset /application.js - 304 Not Modified (0ms)
