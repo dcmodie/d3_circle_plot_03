@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<%= "blah" %>
+
+<div id=main>
+  <form>
+    Not really an ajax call, we are just submitting a form
+    <p>
+      <b>Title</b>
+    </p>
+
+    <p>
+      <b>Report:</b>
+      <%= @high_score.score %>
+    </p>
+    <input type="hidden" id="this_id" value=<%= "#{@high_score.id}" %>>
+
+    <%= button_tag 'ajax call - get data from server', :id=>'update_data', :name=>"#{@high_score.id}" %>
+    <!--
+       can uncomment below, and we do get an alert success, but $( "#main").html( data) doesn't do what we want,
+       i.e. the whole page still redraws.
+    -->
+    <br/>
+    <br/>
+    <br/>
+    <%= link_to 'home',  '/' %>
+  </form>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        /*
+         $( "#update_data" ).click(function(){
+         //alert ("clicked " + this.name)
+         $.ajax({
+         type: 'GET',
+         url: '/high_scores/' + this.name ,
+         data: { postVar1: 'theValue1', postVar2: 'theValue2' },
+         success:function(data){
+         // alert("success")
+         // successful request; do something with the data
+         $('#ajax-panel').empty();
+         $( "#main").html( data)
+         },
+         error:function(){
+         // failed request; give feedback to user
+         $('#ajax-panel').html('<p class="error"><strong>Error!</strong> Try again in a few moments.</p>');
+         }
+         });
+         });
+         */
+
+    });
+
+</script>
