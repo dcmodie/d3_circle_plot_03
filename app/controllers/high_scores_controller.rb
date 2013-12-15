@@ -5,6 +5,8 @@ class HighScoresController < ApplicationController
   def index
     @high_scores = HighScore.all
 
+
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @high_scores }
